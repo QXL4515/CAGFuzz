@@ -29,9 +29,16 @@ $ cd CycleGAN/
 $ python CycleGAN_model.py
 ```
 An example of the generated adversarial examples is as follows:
-![](https://github.com/QXL4515/CAGFuzz/blob/master/picture/D1.jpg)
-![](https://github.com/QXL4515/CAGFuzz/tree/master/picture/D2.jpg)
-![](https://github.com/QXL4515/CAGFuzz/tree/master/picture/D3.jpg)
-![](https://github.com/QXL4515/CAGFuzz/tree/master/picture/D4.jpg)
-![](https://github.com/QXL4515/CAGFuzz/tree/master/picture/D5.jpg)
-![](https://github.com/QXL4515/CAGFuzz/tree/master/picture/D6.jpg)
+
+<img src="https://github.com/QXL4515/CAGFuzz/blob/master/picture/D1.jpg" width="290"/><img src="https://github.com/QXL4515/CAGFuzz/blob/master/picture/D2.jpg" width="290"/><img src="https://github.com/QXL4515/CAGFuzz/blob/master/picture/D3.jpg" width="290"/><img src="https://github.com/QXL4515/CAGFuzz/blob/master/picture/D4.jpg" width="290"/><img src="https://github.com/QXL4515/CAGFuzz/blob/master/picture/D5.jpg" width="290"/><img src="https://github.com/QXL4515/CAGFuzz/blob/master/picture/D6.jpg" width="290"/>
+
+
+## model
+This folder contains six neural networks for image recognition and a function for recording training loss, namely:
+* LeNet-1
+* LeNet-4
+* LeNet-5
+* VGG-16
+* VGG-19
+* ResNet-20
+* LossHistory
