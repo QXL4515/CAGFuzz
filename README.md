@@ -42,3 +42,44 @@ This folder contains six neural networks for image recognition and a function fo
 * VGG-19
 * ResNet-20
 * LossHistory
+
+If you want to train a LeNet-1 model of your own, please do as follows:
+```
+python LeNet-1.py
+```
+If you want to train a VGG-16 model of your own, please do as follows:
+```
+python VGG-16.py
+```
+
+## similarity
+This folder contains two Python files, one is `vgg19_feature.py`, which is used to extract the depth features of pictures, the other is `utility.py`, which is used to compare the cosine similarity between the depth features of two pictures.
+
+If you want to extract the depth features of an image, you can do this:
+```python
+from keras.applications.vgg19 import VGG19
+from keras.preprocessing import image
+from keras.applications.vgg16 import preprocess_input
+from keras.models import Model
+import numpy as np
+def get_feature(img_dir):
+    base_model = VGG19(weights='imagenet')
+    model = Model(input=base_model.input, output=base_model.get_layer('fc2').output)
+    img = image.load_img(img_dir, target_size=(224, 224))
+    x = image.img_to_array(img)
+    x = np.expand_dims(x, axis=0)
+    x = preprocess_input(x)
+    f = model.predict(x)
+    print(f.shape)
+    print(f)
+    return f
+```
+If you want to compare the cosine similarity between the depth features of two images, you can do this:
+```python
+from utility import get_cossimi
+s1 = get_feature('1.png')
+s2 = get_feature('0_1_000.png')
+sim = get_cossimi(s1, s2)
+print(sim)
+```
+
