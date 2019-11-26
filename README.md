@@ -5,3 +5,6 @@ CAGFuzz, a Coverage-guided Adversarial Generative Fuzzing testing approach for D
 * model
 * similarity
 ## Coverage_Calculate
+This folder contains the code to calculate the neuron coverage. You can call the functions in the python file to run directly. An example is as follows:
+<from Keras_coverage import NCoverage
+from keras.models import load_model>
