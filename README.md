@@ -29,7 +29,7 @@ $ cd CycleGAN/
 $ python CycleGAN_model.py
 ```
 An example of the generated adversarial examples is as follows:
-![](https://github.com/QXL4515/CAGFuzz/tree/master/picture/D1.jpg)
+![](https://github.com/QXL4515/CAGFuzz/blob/master/picture/D1.jpg)
 ![](https://github.com/QXL4515/CAGFuzz/tree/master/picture/D2.jpg)
 ![](https://github.com/QXL4515/CAGFuzz/tree/master/picture/D3.jpg)
 ![](https://github.com/QXL4515/CAGFuzz/tree/master/picture/D4.jpg)
