@@ -4,3 +4,4 @@ CAGFuzz, a Coverage-guided Adversarial Generative Fuzzing testing approach for D
 * CycleGAN
 * model
 * similarity
+## Coverage_Calculate
