@@ -88,8 +88,8 @@ print(sim)
 <img src="https://github.com/QXL4515/CAGFuzz/blob/master/picture/The overall process of realizing CAGFuzz.jpg" width="500"/>
 
 The general process of CAG is shown in the figure above. The specific process can be as follows:
-* We need to call `CycleGAN_,odel.py` in `CycleGAN` to train `AGE`.
-* The function of feature extraction is realized by `vgg19_feature.py` file in folder `similarity`.
+* First, we need to call `CycleGAN_,odel.py` in `CycleGAN` to train `AGE`.
+* Then, the function of feature extraction is realized by `vgg19_feature.py` file in folder `similarity`.
 * Finally, the implementation of neuron coverage needs file `Keras_coverage.py` under folder `Coverage_Calculate`.
 
 
