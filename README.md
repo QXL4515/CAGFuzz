@@ -83,3 +83,5 @@ sim = get_cossimi(s1, s2)
 print(sim)
 ```
 
+## The overall process of realizing CAGFuzz
+
